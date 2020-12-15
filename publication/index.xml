@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications | </title>
+    <link>https://rlitschk.github.io/publication/</link>
+      <atom:link href="https://rlitschk.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 28 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://rlitschk.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Publications</title>
+      <link>https://rlitschk.github.io/publication/</link>
+    </image>
+    
+    <item>
+      <title>Evaluating Multilingual Text Encoders for Unsupervised Cross-Lingual Retrieval</title>
+      <link>https://rlitschk.github.io/publication/litschko-2021-encoderclir/</link>
+      <pubDate>Sun, 28 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://rlitschk.github.io/publication/litschko-2021-encoderclir/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Probing Pretrained Language Models for Lexical Semantics</title>
+      <link>https://rlitschk.github.io/publication/vulic-2020-probing/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://rlitschk.github.io/publication/vulic-2020-probing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards Instance-Level Parser Selection for Cross-Lingual Transfer of Dependency Parsers</title>
+      <link>https://rlitschk.github.io/publication/litschko-2020-towards/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://rlitschk.github.io/publication/litschko-2020-towards/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evaluating resource-lean cross-lingual embedding models in unsupervised retrieval</title>
+      <link>https://rlitschk.github.io/publication/litschko-2019-evaluating/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://rlitschk.github.io/publication/litschko-2019-evaluating/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How to (Properly) Evaluate Cross-Lingual Word Embeddings: On Strong Baselines, Comparative Analyses, and Some Misconceptions</title>
+      <link>https://rlitschk.github.io/publication/glavas-etal-2019-properly/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://rlitschk.github.io/publication/glavas-etal-2019-properly/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unsupervised Cross-Lingual Information Retrieval Using Monolingual Data Only</title>
+      <link>https://rlitschk.github.io/publication/litschko-2018-unsupervised/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://rlitschk.github.io/publication/litschko-2018-unsupervised/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
