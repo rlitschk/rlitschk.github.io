@@ -1,12 +1,21 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+title: Teaching
+description: 
 nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+#### LMU Munich
+- **Instructor**: Information Retrieval Lecture (Summer 2024)
+- **Instructor**: Cross-lingual Information Retrieval Seminar (Winter 22/23, 23/24, 24/25)
+- **Co-Instructor**: Introduction to Computational Linguistics Lecture (Winter 23/24, 24/25)
+- **Co-Instructor**: Symbolic Programming Lecture (Winter 22/23, 23/24, 24/25)
+- **Co-Supervisor**: 1 M.Sc. thesis, 3 B.Sc. theses.
 
-Organize your courses by years, topics, or universities, however you like!
+#### University of Mannheim
+- **Exercise Lead**: Information Retrieval (Summer 2018, 2019)
+- **Exercise Lead**: Introduction to Data Science (Fall 2018)
+- **Exercise Lead**: Text Analytics (Fall 2020)
+- **Co-Supervisor**: 5 M.Sc. theses

@@ -1,25 +1,28 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: 
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic.png
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  more_info: 
 
-news: true # includes a list of news items
+news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am currently a Postdoctoral Reseracher at the [Munich AI and NLP (MaiNLP) lab](https://mainlp.github.io/) at the [Center for Information and Language Processing (CIS)](https://www.cis.uni-muenchen.de/), LMU Munich, led by [Prof. Barbara Plank](https://bplank.github.io/). Before that, I did my Ph.D. at the University of Mannheim, where I was supervised by [Prof. Goran Glavaš](https://www.caidas.uni-wuerzburg.de/nlp/team/goran-glavas/) and advised by [Prof. Simone Ponzetto](https://www.uni-mannheim.de/dws/people/professors/prof-dr-simone-paolo-ponzetto/) and [Dr. Ivan Vulić](https://sites.google.com/site/ivanvulic/).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I work at the intersection of natural language processing (NLP) and information retrieval (IR). My reserach interests are centered around trustworthy AI and information access in resource-constrained environments, where I specifically focus on understanding the behavior of large language models (LLMs) and multilingual retrieval models. 
+
+<!--
+ My research interests include trustworthy information access. This incldues information retrieval under resource-constrained environments and understanding how information is acquired and accessed in large language models. 
+
+  Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically. 
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+-->
