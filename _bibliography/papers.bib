@@ -386,7 +386,8 @@
     pdf = "https://aclanthology.org/2020.coling-main.345/",
     pages = "3886--3898",
     abstract = "Current methods of cross-lingual parser transfer focus on predicting the best parser for a low-resource target language globally, that is, {\textquotedblleft}at treebank level{\textquotedblright}. In this work, we propose and argue for a novel cross-lingual transfer paradigm: instance-level parser selection (ILPS), and present a proof-of-concept study focused on instance-level selection in the framework of delexicalized parser transfer. Our work is motivated by an empirical observation that different source parsers are the best choice for different Universal POS-sequences (i.e., UPOS sentences) in the target language. We then propose to predict the best parser at the instance level. To this end, we train a supervised regression model, based on the Transformer architecture, to predict parser accuracies for individual POS-sequences. We compare ILPS against two strong single-best parser selection baselines (SBPS): (1) a model that compares POS n-gram distributions between the source and target languages (KL) and (2) a model that selects the source based on the similarity between manually created language vectors encoding syntactic properties of languages (L2V). The results from our extensive evaluation, coupling 42 source parsers and 20 diverse low-resource test languages, show that ILPS outperforms KL and L2V on 13/20 and 14/20 test languages, respectively. Further, we show that by predicting the best parser {\textquotedblleft}at treebank level{\textquotedblright} (SBPS), using the aggregation of predictions from our instance-level model, we outperform the same baselines on 17/20 and 16/20 test languages.",
-    preview={sentselect.png}
+    preview={sentselect.png},
+    poster={coling2020-sentselect-poster.pdf}
 }
 
 
