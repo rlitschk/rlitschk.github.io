@@ -17,7 +17,7 @@ social: true # includes social icons at the bottom of the page
 
 I am currently a Postdoctoral Reseracher at the [Munich AI and NLP (MaiNLP) lab](https://mainlp.github.io/) at the [Center for Information and Language Processing (CIS)](https://www.cis.uni-muenchen.de/), LMU Munich, led by [Prof. Barbara Plank](https://bplank.github.io/). Before that, I did my Ph.D. at the University of Mannheim, where I was supervised by [Prof. Goran Glavaš](https://www.caidas.uni-wuerzburg.de/nlp/team/goran-glavas/) and advised by [Prof. Simone Ponzetto](https://www.uni-mannheim.de/dws/people/professors/prof-dr-simone-paolo-ponzetto/) and [Dr. Ivan Vulić](https://sites.google.com/site/ivanvulic/).
 
-I work at the intersection of natural language processing (NLP) and information retrieval (IR). My reserach interests are centered around trustworthy AI and information access in resource-constrained environments, where I specifically focus on understanding the behavior of large language models (LLMs) and multilingual retrieval models. 
+I work at the intersection of natural language processing (NLP) and information retrieval (IR). My research interests are centered around trustworthy AI and information access in resource-constrained environments, where I specifically focus on understanding the behavior of large language models (LLMs) and multilingual retrieval models. 
 
 <!--
  My research interests include trustworthy information access. This incldues information retrieval under resource-constrained environments and understanding how information is acquired and accessed in large language models. 
