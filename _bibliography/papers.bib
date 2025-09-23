@@ -1,6 +1,23 @@
 ---
 ---
 
+@inproceedings{litschko-etal-dialemma,
+  title={Evaluating Large Language Models for Cross-Lingual Retrieval},
+  author={Litschko, Robert and
+    Blaschke, Verena and
+    Plank, Barbara and
+    Frassinelli, Diego},
+  editor = "",
+  month = nov,
+  year = "2025",
+  booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+  abstract={Dialects exhibit a substantial degree of variation due to the lack of a standard orthography. At the same time, the ability of Large Language Models (LLMs) to process dialects remains largely understudied. To address this gap, we use Bavarian as a case study and investigate the lexical dialect understanding capability of LLMs by examining how well they recognize and translate dialectal terms across different parts-of-speech. To this end, we introduce \dialemma{}, a novel annotation framework for creating dialect variation dictionaries from monolingual data only, and use it to compile a ground truth dataset consisting of 100K human-annotated German-Bavarian word pairs. We evaluate how well nine state-of-the-art LLMs can judge Bavarian terms as dialect translations, inflected variants, or unrelated forms of a given German lemma. Our results show that LLMs perform best on nouns and lexically similar word pairs, and struggle most in distinguishing between direct translations and inflected variants. Interestingly, providing additional context in the form of example usages improves the translation performance, but reduces their ability to recognize dialect variants. This study highlights the limitations of LLMs in dealing with orthographic dialect variation and emphasizes the need for future work on adapting LLMs to dialects.},
+  year={2025},
+  pdf="https://arxiv.org/pdf/2509.17855",
+  preview={dialemma.png},
+  code={https://github.com/mainlp/dialemma},
+}
+
 @inproceedings{zou-etal-llm-clir,
   title={Evaluating Large Language Models for Cross-Lingual Retrieval},
   author={Zuo, Longfei and
@@ -12,12 +29,31 @@
   month = nov,
   year = "2025",
   booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
-  journal={arXiv preprint arXiv:},
   abstract={Multi-stage information retrieval (IR) has become a widely-adopted paradigm in search. While Large Language Models (LLMs) have been extensively evaluated as second-stage reranking models for monolingual IR, a systematic large-scale comparison is still lacking for cross-lingual IR (CLIR). Moreover, while prior work shows that LLM-based rerankers improve CLIR performance, their evaluation setup relies on lexical retrieval with machine translation (MT) for the first stage. This is not only prohibitively expensive but also prone to error propagation across stages. Our evaluation on passage-level and document-level CLIR reveals that further gains can be achieved with multilingual bi-encoders as first-stage retrievers and that the benefits of translation diminishes with stronger reranking models. We further show that pairwise rerankers based on instruction-tuned LLMs perform competitively with listwise rerankers. To the best of our knowledge, we are the first to study the interaction between retrievers and rerankers in two-stage CLIR with LLMs. Our findings reveal that, without MT, current state-of-the-art rerankers fall severely short when directly applied in CLIR.},
   year={2025},
   pdf="https://arxiv.org/pdf/2509.14749",
   preview={llm-clir.png},
+  selected={true},
   code={https://github.com/mainlp/llm-clir},
+}
+
+@inproceedings{du-etal-reason-to-rote,
+  title={Reason to Rote: Rethinking Memorization in Reasoning},
+  author={Du, Yupei and
+    Mondorf, Philipp and
+    Casola, Silvia and
+    Yao, Yuekun and
+    Litschko, Robert and
+    Plank, Barbara},
+  editor = "",
+  month = nov,
+  year = "2025",
+  booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+  abstract={Large language models readily memorize arbitrary training instances, such as label noise, yet they perform strikingly well on reasoning tasks. In this work, we investigate how language models memorize label noise, and why such memorization in many cases does not heavily affect generalizable reasoning capabilities. Using two controllable synthetic reasoning datasets with noisy labels, four-digit addition (FDA) and two-hop relational reasoning (THR), we discover a reliance of memorization on generalizable reasoning mechanisms: models continue to compute intermediate reasoning outputs even when retrieving memorized noisy labels, and intervening reasoning adversely affects memorization. We further show that memorization operates through distributed encoding, i.e., aggregating various inputs and intermediate results, rather than building a look-up mechanism from inputs to noisy labels. Moreover, our FDA case study reveals memorization occurs via outlier heuristics, where existing neuron activation patterns are slightly shifted to fit noisy labels. Together, our findings suggest that memorization of label noise in language models builds on, rather than overrides, the underlying reasoning mechanisms, shedding lights on the intriguing phenomenon of benign memorization.},
+  year={2025},
+  pdf="https://arxiv.org/pdf/2507.04782",
+  preview={reason-to-rote.png},
+  code={https://github.com/mainlp/memorized_reasonings},
 }
 
 @inproceedings{litschko-etal-2025-cdir,
