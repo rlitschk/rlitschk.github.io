@@ -1,6 +1,25 @@
 ---
 ---
 
+@inproceedings{zou-etal-llm-clir,
+  title={Evaluating Large Language Models for Cross-Lingual Retrieval},
+  author={Zuo, Longfei and
+    Hong, Pingjun and
+    Kraus, Oliver and
+    Plank, Barbara and
+    Litschko, Robert},
+  editor = "",
+  month = nov,
+  year = "2025",
+  booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+  journal={arXiv preprint arXiv:},
+  abstract={Multi-stage information retrieval (IR) has become a widely-adopted paradigm in search. While Large Language Models (LLMs) have been extensively evaluated as second-stage reranking models for monolingual IR, a systematic large-scale comparison is still lacking for cross-lingual IR (CLIR). Moreover, while prior work shows that LLM-based rerankers improve CLIR performance, their evaluation setup relies on lexical retrieval with machine translation (MT) for the first stage. This is not only prohibitively expensive but also prone to error propagation across stages. Our evaluation on passage-level and document-level CLIR reveals that further gains can be achieved with multilingual bi-encoders as first-stage retrievers and that the benefits of translation diminishes with stronger reranking models. We further show that pairwise rerankers based on instruction-tuned LLMs perform competitively with listwise rerankers. To the best of our knowledge, we are the first to study the interaction between retrievers and rerankers in two-stage CLIR with LLMs. Our findings reveal that, without MT, current state-of-the-art rerankers fall severely short when directly applied in CLIR.},
+  year={2025},
+  pdf="https://arxiv.org/pdf/2509.14749",
+  preview={llm-clir.png},
+  code={https://github.com/mainlp/llm-clir},
+}
+
 @inproceedings{litschko-etal-2025-cdir,
     title = "Cross-Dialect Information Retrieval: Information Access in Low-Resource and High-Variance Languages",
     author = "Litschko, Robert  and
