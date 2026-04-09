@@ -7,12 +7,18 @@ nav: true
 nav_order: 6
 ---
 
+#### University of Stuttgart
+- **Instructor**: MA Colloquium (Summer 2026)
+- **Instructor**: Methods of Digital Humanities (Summer 2026)
+- **Instructor**: Project Seminar (Summer 2026)
+- **Instructor**: Advanced Topics of Digital Humanities (Summer 2026)
+
 #### LMU Munich
-- **Instructor**: Information Retrieval Lecture (Summer 2024)
-- **Instructor**: Cross-lingual Information Retrieval Seminar (Winter 22/23, 23/24, 24/25)
-- **Co-Instructor**: Introduction to Computational Linguistics Lecture (Winter 23/24, 24/25)
-- **Co-Instructor**: Symbolic Programming Lecture (Winter 22/23, 23/24, 24/25)
-- **Co-Supervisor**: 1 M.Sc. thesis, 3 B.Sc. theses.
+- **Instructor**: Information Retrieval (Summer 2024, 2025)
+- **Instructor**: Cross-lingual Information Retrieval Seminar (Winter 2022/23 until 2025/26)
+- **Co-Instructor**: Introduction to Computational Linguistics (Winter 2023/24 until 2025/26)
+- **Co-Instructor**: Symbolic Programming (Winter 2022/23 until 2025/26)
+- **Co-Supervisor**: 4 master theses, 6 bachelor theses.
 
 #### University of Mannheim
 - **Exercise Lead**: Information Retrieval (Summer 2018, 2019)
