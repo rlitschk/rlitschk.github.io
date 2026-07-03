@@ -1,49 +1,88 @@
 ---
 ---
+@inproceedings{chen2026decoupling,
+    title={Decoupling the Effect of Chain-of-Thought Reasoning: A Human Label Variation Perspective},
+    author={Chen, Beiduo and 
+      Hu, Tiancheng and 
+        Zhang, Caiqi and 
+        Litschko, Robert and 
+        Korhonen, Anna and 
+        Plank, Barbara},
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2026",
+    month = jul,
+    year={2026},
+    pages = {21931--21951},
+    editor = "Liakata, Maria  and
+        Moreira, Viviane P.  and
+        Zhang, Jiajun  and
+        Jurgens, David",
+    pdf = "https://aclanthology.org/2026.findings-acl.1103/",
+    address = {San Diego, California},
+    publisher = {Association for Computational Linguistics},
+    abstract={Reasoning-tuned LLMs utilizing long Chain-of-Thought (CoT) excel at single-answer tasks, yet their ability to model Human Label Variation—which requires capturing probabilistic ambiguity rather than resolving it—remains underexplored. We investigate this through systematic disentanglement experiments on distribution-based tasks, employing Cross-CoT experiments to isolate the effect of reasoning text from intrinsic model priors. We observe a distinct "decoupled mechanism": while CoT improves distributional alignment, final accuracy is dictated by CoT content (99% variance contribution), whereas distributional ranking is governed by model priors (over 80%). Step-wise analysis further shows that while CoT’s influence on accuracy grows monotonically during the reasoning process, distributional structure is largely determined by LLM’s intrinsic priors. These findings suggest that long CoT serves as a decisive LLM decision-maker for the top option but fails to function as a granular distribution calibrator for ambiguous tasks.},
+    preview = {CoT_HLV.png},
+    slides = {ACL2026_CoTHLV_slides.pdf},
+    poster = {ACL2026_CoTHLV_Poster.pdf},
+    video = {https://drive.google.com/file/d/1Da9VAHtyBoF-7GErxnVFgZPhp0-LRODd},
+    code = {https://github.com/mainlp/CoT-HLV},
+}
+
 @inproceedings{litschko-etal-2026-resource,
-  title = {Resource-Lean Lexicon Induction for German Dialects},
-  author = {Litschko, Robert and Plank, Barbara and Frassinelli, Diego},
-  booktitle = {Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026)},
-  month = {May},
-  year = {2026},
-  pages = {9044--9050},
-  address = {Palma, Mallorca, Spain},
-  publisher = {European Language Resources Association (ELRA)},
-  editor = {Piperidis, Stelios and Bel, Núria and van den Heuvel, Henk and Ide, Nancy and Krek, Simon and Toral, Antonio},
-  abstract = {Automatic induction of high-quality dictionaries is essential for building lexical resources, yet low-resource languages and dialects pose several challenges: limited access to annotators, high degree of spelling variations, and poor performance of large language models (LLMs). We empirically show that statistical models (random forests) trained on string similarity features are surprisingly effective for inducing German dialect lexicons. They outperform LLMs, enable cross-dialect transfer, and offer a lightweight data-driven alternative. We evaluate our models intrinsically on bilingual lexicon induction (BLI) and extrinsically on dialect information retrieval (IR). On BLI, random forests outperform Mistral-123b while being more resource-lean. On dialect IR with BM25, using our dialect dictionaries for query expansion yields relative improvements of up to 28.9% in nDCG@10 and 50.7% in Recall@100. Motivated by the resource scarcity in dialects, we further investigate the extent to which models transfer across different German dialects, and their performance under varying amounts of training data.},
-  preview = {resource-lean-dialect-induction.png},
-  pdf = {https://lrec.elra.info/lrec2026-main-711},
-  code = {https://github.com/mainlp/dialect-lexicon-induction},
-  slides = {LREC_2026_dialect-lexicon-induction_slides.pdf},
-  poster = {LREC_2026_dialect-lexicon-induction_poster.pdf}
+    title = {Resource-Lean Lexicon Induction for German Dialects},
+    author = {Litschko, Robert and Plank, Barbara and Frassinelli, Diego},
+    booktitle = {Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026)},
+    month = {May},
+    year = {2026},
+    pages = {9044--9050},
+    address = {Palma, Mallorca, Spain},
+    publisher = {European Language Resources Association (ELRA)},
+    editor = {Piperidis, Stelios and Bel, Núria and van den Heuvel, Henk and Ide, Nancy and Krek, Simon and Toral, Antonio},
+    abstract = {Automatic induction of high-quality dictionaries is essential for building lexical resources, yet low-resource languages and dialects pose several challenges: limited access to annotators, high degree of spelling variations, and poor performance of large language models (LLMs). We empirically show that statistical models (random forests) trained on string similarity features are surprisingly effective for inducing German dialect lexicons. They outperform LLMs, enable cross-dialect transfer, and offer a lightweight data-driven alternative. We evaluate our models intrinsically on bilingual lexicon induction (BLI) and extrinsically on dialect information retrieval (IR). On BLI, random forests outperform Mistral-123b while being more resource-lean. On dialect IR with BM25, using our dialect dictionaries for query expansion yields relative improvements of up to 28.9% in nDCG@10 and 50.7% in Recall@100. Motivated by the resource scarcity in dialects, we further investigate the extent to which models transfer across different German dialects, and their performance under varying amounts of training data.},
+    preview = {resource-lean-dialect-induction.png},
+    pdf = {https://lrec.elra.info/lrec2026-main-711},
+    code = {https://github.com/mainlp/dialect-lexicon-induction},
+    slides = {LREC_2026_dialect-lexicon-induction_slides.pdf},
+    poster = {LREC_2026_dialect-lexicon-induction_poster.pdf}
 }
 
 @inproceedings{pei-etal-2026-information,
-  title = {Information Asymmetry across Language Varieties: A Case Study on Cantonese-Mandarin and Bavarian-German QA},
-  author = {Pei*, Renhao and Peng*, Siyao and Blaschke, Verena and Litschko, Robert and Plank, Barbara},
-  booktitle = {Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026)},
-  month = {May},
-  year = {2026},
-  pages = {1280--1302},
-  address = {Palma, Mallorca, Spain},
-  publisher = {European Language Resources Association (ELRA)},
-  editor = {Piperidis, Stelios and Bel, Núria and van den Heuvel, Henk and Ide, Nancy and Krek, Simon and Toral, Antonio},
-  abstract = {Large Language Models (LLMs) are becoming a common way for humans to seek knowledge, yet their coverage and reliability vary widely. Especially for local language varieties, there are large asymmetries, e.g., information in local Wikipedia that is absent from the standard variant. However, little is known about how well LLMs perform under such information asymmetry, especially on closely related languages. We manually construct a novel challenge question-answering (QA) dataset that captures knowledge conveyed on a local Wikipedia page, which is absent from their higher-resource counterparts — covering Mandarin Chinese vs. Cantonese and German vs. Bavarian. Our experiments show that LLMs fail to answer questions about information only in local editions of Wikipedia. Providing context from lead sections substantially improves performance, with further gains possible via translation. Our topical, geographic annotations, and stratified evaluations reveal the usefulness of local Wikipedia editions as sources of both regional and global information. These findings raise critical questions about inclusivity and cultural coverage of LLMs.},
-  preview = {wilovaqa.png},
-  pdf = "https://lrec.elra.info/lrec2026-main-100",
-  slides = {LREC_2026_wilovaqa_slides.pdf},
-  code = {https://github.com/mainlp/WiLoVa-QA},
-  video = {https://drive.google.com/file/d/1vn10wIyyVBm1UCNWtadVuamRzzAM6NXe/},
+    title = {Information Asymmetry across Language Varieties: A Case Study on Cantonese-Mandarin and Bavarian-German QA},
+    author = {Pei*, Renhao and Peng*, Siyao and Blaschke, Verena and Litschko, Robert and Plank, Barbara},
+    booktitle = {Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026)},
+    month = {May},
+    year = {2026},
+    pages = {1280--1302},
+    address = {Palma, Mallorca, Spain},
+    publisher = {European Language Resources Association (ELRA)},
+    editor = {Piperidis, Stelios and Bel, Núria and van den Heuvel, Henk and Ide, Nancy and Krek, Simon and Toral, Antonio},
+    abstract = {Large Language Models (LLMs) are becoming a common way for humans to seek knowledge, yet their coverage and reliability vary widely. Especially for local language varieties, there are large asymmetries, e.g., information in local Wikipedia that is absent from the standard variant. However, little is known about how well LLMs perform under such information asymmetry, especially on closely related languages. We manually construct a novel challenge question-answering (QA) dataset that captures knowledge conveyed on a local Wikipedia page, which is absent from their higher-resource counterparts — covering Mandarin Chinese vs. Cantonese and German vs. Bavarian. Our experiments show that LLMs fail to answer questions about information only in local editions of Wikipedia. Providing context from lead sections substantially improves performance, with further gains possible via translation. Our topical, geographic annotations, and stratified evaluations reveal the usefulness of local Wikipedia editions as sources of both regional and global information. These findings raise critical questions about inclusivity and cultural coverage of LLMs.},
+    preview = {wilovaqa.png},
+    pdf = "https://lrec.elra.info/lrec2026-main-100",
+    slides = {LREC_2026_wilovaqa_slides.pdf},
+    code = {https://github.com/mainlp/WiLoVa-QA},
+    video = {https://drive.google.com/file/d/1vn10wIyyVBm1UCNWtadVuamRzzAM6NXe/},
 }
 
-@article{chen2026decoupling,
-  title={Decoupling the Effect of Chain-of-Thought Reasoning: A Human Label Variation Perspective},
-  author={Chen, Beiduo and Hu, Tiancheng and Zhang, Caiqi and Litschko, Robert and Korhonen, Anna and Plank, Barbara},
-  journal={arXiv preprint arXiv:2601.03154},
-  year={2026},
-  abstract={Reasoning-tuned LLMs utilizing long Chain-of-Thought (CoT) excel at single-answer tasks, yet their ability to model Human Label Variation—which requires capturing probabilistic ambiguity rather than resolving it—remains underexplored. We investigate this through systematic disentanglement experiments on distribution-based tasks, employing Cross-CoT experiments to isolate the effect of reasoning text from intrinsic model priors. We observe a distinct "decoupled mechanism": while CoT improves distributional alignment, final accuracy is dictated by CoT content (99% variance contribution), whereas distributional ranking is governed by model priors (over 80%). Step-wise analysis further shows that while CoT’s influence on accuracy grows monotonically during the reasoning process, distributional structure is largely determined by LLM’s intrinsic priors. These findings suggest that long CoT serves as a decisive LLM decision-maker for the top option but fails to function as a granular distribution calibrator for ambiguous tasks.},
-  preview = {CoT_HLV.png},
-  pdf="https://arxiv.org/abs/2601.03154"
+@inproceedings{wang-etal-2026-dialect-bitext-mining,
+    title = "Bi-Text Mining Across German Dialects: On the Role of Synthetic Training Data for Dialect Adaptation",
+    author = "Wang, Jing  and
+      Plank, Barbara  and
+      Litschko, Robert",
+    editor = "Rapp, Reinhard and
+      Rigouts Terryn, Ayla and
+      Sharoff, Serge and
+      Zweigenbaum Pierre",
+    booktitle = "Proceedings of the 19th Workshop on Building and Using Comparable Corpora (BUCC), co-located with LREC",
+    month = {May},
+    year = {2026},
+    address = {Palma, Mallorca, Spain},
+    publisher = "",
+    pages = "72--83",
+    abstract = "Cross-dialect bi-text mining relies on robust multilingual sentence representations to identify semantically equivalent sentence pairs across languages. While recent multilingual bi-encoder models achieve strong performance on standardized written languages, their behavior on dialectal varieties is largely unknown. In this study, we use Tatoeba to evaluate the performance of four widely-used bi-encoders on dialect-to-standard German translation retrieval, covering German documents and queries written in three dialects: Low German, Bavarian, and Alemannic. Motivated by the lack of resources, we examine the extent to which synthetic translations (from dictionaries and large language models; LLMs) can serve as weak supervision for dialect adaptation. Our results reveal that bi-encoders, when applied in a zero-shot setting, exhibit deficiencies in capturing semantic similarity between German and dialects, while fine-tuning on synthetic data substantially improves their retrieval effectiveness, with larger gains obtained from LLM-translated training data. We further analyze retrieval performance on Bavarian across varying dialect word proportions and observe a drop when dialect words make up more than 60\% of the text.",
+    preview = {bucc2026_dialect-bitext-mining.png},
+    pdf = {https://comparable.lisn.upsaclay.fr/bucc2026/pdf/2026.bucc2026-1.9.pdf},
+    slides = {bucc2026_dialect-bitext-mining_slides.pdf},
+    code = {https://github.com/mainlp/dialect-bitext-mining},
 }
 
 @inproceedings{mao-etal-2025-relevant,
@@ -51,7 +90,15 @@
     author = "Mao, Yuchen  and
       Plank, Barbara  and
       Litschko, Robert",
-    editor = "",
+    editor = "Adelani, David Ifeoluwa  and
+      Arnett, Catherine  and
+      Ataman, Duygu  and
+      Chang, Tyler A.  and
+      Gonen, Hila  and
+      Raja, Rahul  and
+      Schmidt, Fabian  and
+      Stap, David  and
+      Wang, Jiayi",
     booktitle = "Proceedings of the 5th Workshop on Multilingual Representation Learning (MRL 2025), co-located with EMNLP",
     month = nov,
     year = "2025",
@@ -65,68 +112,77 @@
 }
 
 @inproceedings{litschko-etal-dialemma,
-  title={Make Every Letter Count: Building Dialect Variation Dictionaries from Monolingual Corpora},
-  author={Litschko, Robert and
-    Blaschke, Verena and
-    Burkhardt, Diana and
-    Plank, Barbara and
-    Frassinelli, Diego},
-  editor = "",
-  month = nov,
-  year = "2025",
-  booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
-  abstract={Dialects exhibit a substantial degree of variation due to the lack of a standard orthography. At the same time, the ability of Large Language Models (LLMs) to process dialects remains largely understudied. To address this gap, we use Bavarian as a case study and investigate the lexical dialect understanding capability of LLMs by examining how well they recognize and translate dialectal terms across different parts-of-speech. To this end, we introduce DiaLemma, a novel annotation framework for creating dialect variation dictionaries from monolingual data only, and use it to compile a ground truth dataset consisting of 100K human-annotated German-Bavarian word pairs. We evaluate how well nine state-of-the-art LLMs can judge Bavarian terms as dialect translations, inflected variants, or unrelated forms of a given German lemma. Our results show that LLMs perform best on nouns and lexically similar word pairs, and struggle most in distinguishing between direct translations and inflected variants. Interestingly, providing additional context in the form of example usages improves the translation performance, but reduces their ability to recognize dialect variants. This study highlights the limitations of LLMs in dealing with orthographic dialect variation and emphasizes the need for future work on adapting LLMs to dialects.},
-  year={2025},
-  pdf="https://aclanthology.org/2025.findings-emnlp.762/",
-  preview={dialemma.png},
-  code={https://github.com/mainlp/dialemma},
-  slides={EMNLP2025_DiaLemma_slides.pdf},
-  poster={EMNLP2025_DiaLemma_poster.pdf},
-  video={https://drive.google.com/file/d/1jqkusrAFZqHUxU-mvWGM2tAWnqUanzS-/view}
+    title={Make Every Letter Count: Building Dialect Variation Dictionaries from Monolingual Corpora},
+    author={Litschko, Robert and
+      Blaschke, Verena and
+      Burkhardt, Diana and
+      Plank, Barbara and
+      Frassinelli, Diego},
+    editor = "Christodoulopoulos, Christos  and
+        Chakraborty, Tanmoy  and
+        Rose, Carolyn  and
+        Peng, Violet",
+    month = nov,
+    year = "2025",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    abstract={Dialects exhibit a substantial degree of variation due to the lack of a standard orthography. At the same time, the ability of Large Language Models (LLMs) to process dialects remains largely understudied. To address this gap, we use Bavarian as a case study and investigate the lexical dialect understanding capability of LLMs by examining how well they recognize and translate dialectal terms across different parts-of-speech. To this end, we introduce DiaLemma, a novel annotation framework for creating dialect variation dictionaries from monolingual data only, and use it to compile a ground truth dataset consisting of 100K human-annotated German-Bavarian word pairs. We evaluate how well nine state-of-the-art LLMs can judge Bavarian terms as dialect translations, inflected variants, or unrelated forms of a given German lemma. Our results show that LLMs perform best on nouns and lexically similar word pairs, and struggle most in distinguishing between direct translations and inflected variants. Interestingly, providing additional context in the form of example usages improves the translation performance, but reduces their ability to recognize dialect variants. This study highlights the limitations of LLMs in dealing with orthographic dialect variation and emphasizes the need for future work on adapting LLMs to dialects.},
+    year={2025},
+    pdf="https://aclanthology.org/2025.findings-emnlp.762/",
+    preview={dialemma.png},
+    code={https://github.com/mainlp/dialemma},
+    slides={EMNLP2025_DiaLemma_slides.pdf},
+    poster={EMNLP2025_DiaLemma_poster.pdf},
+    video={https://drive.google.com/file/d/1jqkusrAFZqHUxU-mvWGM2tAWnqUanzS-/view}
 }
 
 @inproceedings{zou-etal-llm-clir,
-  title={Evaluating Large Language Models for Cross-Lingual Retrieval},
-  author={Zuo*, Longfei and
-    Hong*, Pingjun and
-    Kraus, Oliver and
-    Plank, Barbara and
-    Litschko, Robert},
-  editor = "",
-  month = nov,
-  year = "2025",
-  booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
-  abstract={Multi-stage information retrieval (IR) has become a widely-adopted paradigm in search. While Large Language Models (LLMs) have been extensively evaluated as second-stage reranking models for monolingual IR, a systematic large-scale comparison is still lacking for cross-lingual IR (CLIR). Moreover, while prior work shows that LLM-based rerankers improve CLIR performance, their evaluation setup relies on lexical retrieval with machine translation (MT) for the first stage. This is not only prohibitively expensive but also prone to error propagation across stages. Our evaluation on passage-level and document-level CLIR reveals that further gains can be achieved with multilingual bi-encoders as first-stage retrievers and that the benefits of translation diminishes with stronger reranking models. We further show that pairwise rerankers based on instruction-tuned LLMs perform competitively with listwise rerankers. To the best of our knowledge, we are the first to study the interaction between retrievers and rerankers in two-stage CLIR with LLMs. Our findings reveal that, without MT, current state-of-the-art rerankers fall severely short when directly applied in CLIR.},
-  year={2025},
-  pdf="https://aclanthology.org/2025.findings-emnlp.612",
-  preview={llm-clir.png},
-  selected={true},
-  code={https://github.com/mainlp/llm-clir},
-  slides={EMNLP2025_LLM-CLIR_slides.pdf},
-  video={https://drive.google.com/file/d/10i_KCjCd8MkwpYxzQTLTTbabcZr_G6gP/view},
-  poster={EMNLP2025_LLM_CLIR_poster.pdf},
+    title={Evaluating Large Language Models for Cross-Lingual Retrieval},
+    author={Zuo*, Longfei and
+      Hong*, Pingjun and
+      Kraus, Oliver and
+      Plank, Barbara and
+      Litschko, Robert},
+    editor = "Christodoulopoulos, Christos  and
+        Chakraborty, Tanmoy  and
+        Rose, Carolyn  and
+        Peng, Violet",
+    month = nov,
+    year = "2025",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    abstract={Multi-stage information retrieval (IR) has become a widely-adopted paradigm in search. While Large Language Models (LLMs) have been extensively evaluated as second-stage reranking models for monolingual IR, a systematic large-scale comparison is still lacking for cross-lingual IR (CLIR). Moreover, while prior work shows that LLM-based rerankers improve CLIR performance, their evaluation setup relies on lexical retrieval with machine translation (MT) for the first stage. This is not only prohibitively expensive but also prone to error propagation across stages. Our evaluation on passage-level and document-level CLIR reveals that further gains can be achieved with multilingual bi-encoders as first-stage retrievers and that the benefits of translation diminishes with stronger reranking models. We further show that pairwise rerankers based on instruction-tuned LLMs perform competitively with listwise rerankers. To the best of our knowledge, we are the first to study the interaction between retrievers and rerankers in two-stage CLIR with LLMs. Our findings reveal that, without MT, current state-of-the-art rerankers fall severely short when directly applied in CLIR.},
+    year={2025},
+    pdf="https://aclanthology.org/2025.findings-emnlp.612",
+    preview={llm-clir.png},
+    selected={true},
+    code={https://github.com/mainlp/llm-clir},
+    slides={EMNLP2025_LLM-CLIR_slides.pdf},
+    video={https://drive.google.com/file/d/10i_KCjCd8MkwpYxzQTLTTbabcZr_G6gP/view},
+    poster={EMNLP2025_LLM_CLIR_poster.pdf},
 }
 
 @inproceedings{du-etal-reason-to-rote,
-  title={Reason to Rote: Rethinking Memorization in Reasoning},
-  author={Du, Yupei and
-    Mondorf, Philipp and
-    Casola, Silvia and
-    Yao, Yuekun and
-    Litschko, Robert and
-    Plank, Barbara},
-  editor = "",
-  month = nov,
-  year = "2025",
-  booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
-  abstract={Large language models readily memorize arbitrary training instances, such as label noise, yet they perform strikingly well on reasoning tasks. In this work, we investigate how language models memorize label noise, and why such memorization in many cases does not heavily affect generalizable reasoning capabilities. Using two controllable synthetic reasoning datasets with noisy labels, four-digit addition (FDA) and two-hop relational reasoning (THR), we discover a reliance of memorization on generalizable reasoning mechanisms: models continue to compute intermediate reasoning outputs even when retrieving memorized noisy labels, and intervening reasoning adversely affects memorization. We further show that memorization operates through distributed encoding, i.e., aggregating various inputs and intermediate results, rather than building a look-up mechanism from inputs to noisy labels. Moreover, our FDA case study reveals memorization occurs via outlier heuristics, where existing neuron activation patterns are slightly shifted to fit noisy labels. Together, our findings suggest that memorization of label noise in language models builds on, rather than overrides, the underlying reasoning mechanisms, shedding lights on the intriguing phenomenon of benign memorization.},
-  year={2025},
-  pdf="https://aclanthology.org/2025.emnlp-main.437/",
-  preview={reason-to-rote.png},
-  code={https://github.com/mainlp/memorized_reasonings},
-  slides={EMNLP2025_reason-to-rote-slides.pdf},
-  poster={EMNLP2025_reason-to-rote-poster.pdf},
-  video={https://drive.google.com/file/d/1NpBIKoCR7nVwzA737THNUQ5bfCoZngxI/view}
+    title={Reason to Rote: Rethinking Memorization in Reasoning},
+    author={Du, Yupei and
+      Mondorf, Philipp and
+      Casola, Silvia and
+      Yao, Yuekun and
+      Litschko, Robert and
+      Plank, Barbara},
+    editor = "Christodoulopoulos, Christos  and
+        Chakraborty, Tanmoy  and
+        Rose, Carolyn  and
+        Peng, Violet",
+    month = nov,
+    year = "2025",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    abstract={Large language models readily memorize arbitrary training instances, such as label noise, yet they perform strikingly well on reasoning tasks. In this work, we investigate how language models memorize label noise, and why such memorization in many cases does not heavily affect generalizable reasoning capabilities. Using two controllable synthetic reasoning datasets with noisy labels, four-digit addition (FDA) and two-hop relational reasoning (THR), we discover a reliance of memorization on generalizable reasoning mechanisms: models continue to compute intermediate reasoning outputs even when retrieving memorized noisy labels, and intervening reasoning adversely affects memorization. We further show that memorization operates through distributed encoding, i.e., aggregating various inputs and intermediate results, rather than building a look-up mechanism from inputs to noisy labels. Moreover, our FDA case study reveals memorization occurs via outlier heuristics, where existing neuron activation patterns are slightly shifted to fit noisy labels. Together, our findings suggest that memorization of label noise in language models builds on, rather than overrides, the underlying reasoning mechanisms, shedding lights on the intriguing phenomenon of benign memorization.},
+    year={2025},
+    pdf="https://aclanthology.org/2025.emnlp-main.437/",
+    preview={reason-to-rote.png},
+    code={https://github.com/mainlp/memorized_reasonings},
+    slides={EMNLP2025_reason-to-rote-slides.pdf},
+    poster={EMNLP2025_reason-to-rote-poster.pdf},
+    video={https://drive.google.com/file/d/1NpBIKoCR7nVwzA737THNUQ5bfCoZngxI/view}
 }
 
 @inproceedings{litschko-etal-2025-cdir,
@@ -135,7 +191,12 @@
       Kraus, Oliver  and
       Blaschke, Verena  and
       Plank, Barbara",
-    editor = "",
+    editor = "Rambow, Owen  and
+      Wanner, Leo  and
+      Apidianaki, Marianna  and
+      Al-Khalifa, Hend  and
+      Eugenio, Barbara Di  and
+      Schockaert, Steven",
     booktitle = "Proceedings of the 31st International Conference on Computational Linguistics (COLING)",
     month = jan,
     year = "2025",
@@ -218,24 +279,24 @@
 
 
 @article{sabeh2024exploring,
-  title={Exploring Large Language Models for Product Attribute Value Identification},
-  author={Sabeh, Kassem and Kacimi, Mouna and Gamper, Johann and Litschko, Robert and Plank, Barbara},
-  journal={arXiv preprint arXiv:2409.12695},
-  abstract="Product attribute value identification (PAVI) involves automatically identifying attributes and their values from product information, enabling features like product search, recommendation, and comparison. Existing methods primarily rely on fine-tuning pre-trained language models, such as BART and T5, which require extensive task-specific training data and struggle to generalize to new attributes. This paper explores large language models (LLMs), such as LLaMA and Mistral, as data-efficient and robust alternatives for PAVI. We propose various strategies: comparing one-step and two-step prompt-based approaches in zero-shot settings and utilizing parametric and non-parametric knowledge through in-context learning examples. We also introduce a dense demonstration retriever based on a pre-trained T5 model and perform instruction fine-tuning to explicitly train LLMs on task-specific instructions. Extensive experiments on two product benchmarks show that our two-step approach significantly improves performance in zero-shot settings, and instruction fine-tuning further boosts performance when using training data, demonstrating the practical benefits of using LLMs for PAVI.",
-  year={2024},
-  pdf={https://arxiv.org/abs/2409.12695},
-  preview={llm-pavi.png}
+    title={Exploring Large Language Models for Product Attribute Value Identification},
+    author={Sabeh, Kassem and Kacimi, Mouna and Gamper, Johann and Litschko, Robert and Plank, Barbara},
+    journal={arXiv preprint arXiv:2409.12695},
+    abstract="Product attribute value identification (PAVI) involves automatically identifying attributes and their values from product information, enabling features like product search, recommendation, and comparison. Existing methods primarily rely on fine-tuning pre-trained language models, such as BART and T5, which require extensive task-specific training data and struggle to generalize to new attributes. This paper explores large language models (LLMs), such as LLaMA and Mistral, as data-efficient and robust alternatives for PAVI. We propose various strategies: comparing one-step and two-step prompt-based approaches in zero-shot settings and utilizing parametric and non-parametric knowledge through in-context learning examples. We also introduce a dense demonstration retriever based on a pre-trained T5 model and perform instruction fine-tuning to explicitly train LLMs on task-specific instructions. Extensive experiments on two product benchmarks show that our two-step approach significantly improves performance in zero-shot settings, and instruction fine-tuning further boosts performance when using training data, demonstrating the practical benefits of using LLMs for PAVI.",
+    year={2024},
+    pdf={https://arxiv.org/abs/2409.12695},
+    preview={llm-pavi.png}
 }
 
 
 @article{sabeh2024empirical,
-  title={An empirical comparison of generative approaches for product attribute-value identification},
-  author={Sabeh, Kassem and Litschko, Robert and Kacimi, Mouna and Plank, Barbara and Gamper, Johann},
-  journal={arXiv preprint arXiv:2407.01137},
-  abstract={Product attributes are crucial for e-commerce platforms, supporting applications like search, recommendation, and question answering. The task of Product Attribute and Value Identification (PAVI) involves identifying both attributes and their values from product information. In this paper, we formulate PAVI as a generation task and provide, to the best of our knowledge, the most comprehensive evaluation of PAVI so far. We compare three different attribute-value generation (AVG) strategies based on fine-tuning encoder-decoder models on three datasets. Experiments show that end-to-end AVG approach, which is computationally efficient, outperforms other strategies. However, there are differences depending on model sizes and the underlying language model.},
-  year={2024},
-  pdf={https://arxiv.org/abs/2407.01137},
-  preview={empirical-pavi.png}
+    title={An empirical comparison of generative approaches for product attribute-value identification},
+    author={Sabeh, Kassem and Litschko, Robert and Kacimi, Mouna and Plank, Barbara and Gamper, Johann},
+    journal={arXiv preprint arXiv:2407.01137},
+    abstract={Product attributes are crucial for e-commerce platforms, supporting applications like search, recommendation, and question answering. The task of Product Attribute and Value Identification (PAVI) involves identifying both attributes and their values from product information. In this paper, we formulate PAVI as a generation task and provide, to the best of our knowledge, the most comprehensive evaluation of PAVI so far. We compare three different attribute-value generation (AVG) strategies based on fine-tuning encoder-decoder models on three datasets. Experiments show that end-to-end AVG approach, which is computationally efficient, outperforms other strategies. However, there are differences depending on model sizes and the underlying language model.},
+    year={2024},
+    pdf={https://arxiv.org/abs/2407.01137},
+    preview={empirical-pavi.png}
 }
 
 
@@ -454,33 +515,33 @@
 
 
 @article{litschko2022cross,
-  title={On cross-lingual retrieval with multilingual text encoders},
-  author={Litschko, Robert and Vuli{\'c}, Ivan and Ponzetto, Simone Paolo and Glava{\v{s}}, Goran},
-  journal={Information Retrieval Journal},
-  volume={25},
-  number={2},
-  pages={149--183},
-  year={2022},
-  pdf={https://link.springer.com/article/10.1007/s10791-022-09406-x},
-  publisher={Springer},
-  abstract="In this work we present a systematic empirical study focused on the suitability of the state-of-the-art multilingual encoders for cross-lingual document and sentence retrieval tasks across a number of diverse language pairs. We first treat these models as multilingual text encoders and benchmark their performance in unsupervised ad-hoc sentence- and document-level CLIR. In contrast to supervised language understanding, our results indicate that for unsupervised document-level CLIR -- a setup with no relevance judgments for IR-specific fine-tuning -- pretrained multilingual encoders on average fail to significantly outperform earlier models based on CLWEs. For sentence-level retrieval, we do obtain state-of-the-art performance: the peak scores, however, are met by multilingual encoders that have been further specialized, in a supervised fashion, for sentence understanding tasks, rather than using their vanilla 'off-the-shelf' variants. Following these results, we introduce localized relevance matching for document-level CLIR, where we independently score a query against document sections. In the second part, we evaluate multilingual encoders fine-tuned in a supervised fashion (i.e., we learn to rank) on English relevance data in a series of zero-shot language and domain transfer CLIR experiments. Our results show that supervised re-ranking rarely improves the performance of multilingual transformers as unsupervised base rankers. Finally, only with in-domain contrastive fine-tuning (i.e., same domain, only language transfer), we manage to improve the ranking quality. We uncover substantial empirical differences between cross-lingual retrieval results and results of (zero-shot) cross-lingual transfer for monolingual retrieval in target languages, which point to ``monolingual overfitting'' of retrieval models trained on monolingual data.",
-  preview={irj-paper.png},
-  code={https://github.com/rlitschk/EncoderCLIR}
+    title={On cross-lingual retrieval with multilingual text encoders},
+    author={Litschko, Robert and Vuli{\'c}, Ivan and Ponzetto, Simone Paolo and Glava{\v{s}}, Goran},
+    journal={Information Retrieval Journal},
+    volume={25},
+    number={2},
+    pages={149--183},
+    year={2022},
+    pdf={https://link.springer.com/article/10.1007/s10791-022-09406-x},
+    publisher={Springer},
+    abstract="In this work we present a systematic empirical study focused on the suitability of the state-of-the-art multilingual encoders for cross-lingual document and sentence retrieval tasks across a number of diverse language pairs. We first treat these models as multilingual text encoders and benchmark their performance in unsupervised ad-hoc sentence- and document-level CLIR. In contrast to supervised language understanding, our results indicate that for unsupervised document-level CLIR -- a setup with no relevance judgments for IR-specific fine-tuning -- pretrained multilingual encoders on average fail to significantly outperform earlier models based on CLWEs. For sentence-level retrieval, we do obtain state-of-the-art performance: the peak scores, however, are met by multilingual encoders that have been further specialized, in a supervised fashion, for sentence understanding tasks, rather than using their vanilla 'off-the-shelf' variants. Following these results, we introduce localized relevance matching for document-level CLIR, where we independently score a query against document sections. In the second part, we evaluate multilingual encoders fine-tuned in a supervised fashion (i.e., we learn to rank) on English relevance data in a series of zero-shot language and domain transfer CLIR experiments. Our results show that supervised re-ranking rarely improves the performance of multilingual transformers as unsupervised base rankers. Finally, only with in-domain contrastive fine-tuning (i.e., same domain, only language transfer), we manage to improve the ranking quality. We uncover substantial empirical differences between cross-lingual retrieval results and results of (zero-shot) cross-lingual transfer for monolingual retrieval in target languages, which point to ``monolingual overfitting'' of retrieval models trained on monolingual data.",
+    preview={irj-paper.png},
+    code={https://github.com/rlitschk/EncoderCLIR}
 }
 
 @inproceedings{litschko2021evaluating,
-  title={Evaluating multilingual text encoders for unsupervised cross-lingual retrieval},
-  author={Litschko, Robert and Vuli{\'c}, Ivan and Ponzetto, Simone Paolo and Glava{\v{s}}, Goran},
-  booktitle={Advances in Information Retrieval: 43rd European Conference on IR Research (ECIR)},
-  pages={342--358},
-  year={2021},
-  organization={Springer},
-  abstract="Pretrained multilingual text encoders based on neural Transformer architectures, such as multilingual BERT (mBERT) and XLM, have achieved strong performance on a myriad of language understanding tasks. Consequently, they have been adopted as a go-to paradigm for multilingual and cross-lingual representation learning and transfer, rendering cross-lingual word embeddings (CLWEs) effectively obsolete. However, questions remain to which extent this finding generalizes 1) to unsupervised settings and 2) for ad-hoc cross-lingual IR (CLIR) tasks. Therefore, in this work we present a systematic empirical study focused on the suitability of the state-of-the-art multilingual encoders for cross-lingual document and sentence retrieval tasks across a large number of language pairs. In contrast to supervised language understanding, our results indicate that for unsupervised document-level CLIR -- a setup with no relevance judgments for IR-specific fine-tuning -- pretrained encoders fail to significantly outperform models based on CLWEs. For sentence-level CLIR, we demonstrate that state-of-the-art performance can be achieved. However, the peak performance is not met using the general-purpose multilingual text encoders `off-the-shelf', but rather relying on their variants that have been further specialized for sentence understanding tasks.",
-  preview={evaluating-multilingual-textencoders.png},
-  pdf={https://link.springer.com/chapter/10.1007/978-3-030-72113-8_23},
-  code={https://github.com/rlitschk/EncoderCLIR},
-  slides={ecir 2021 presentation.pdf},
-  poster={ecir-2021-poster.pdf}
+    title={Evaluating multilingual text encoders for unsupervised cross-lingual retrieval},
+    author={Litschko, Robert and Vuli{\'c}, Ivan and Ponzetto, Simone Paolo and Glava{\v{s}}, Goran},
+    booktitle={Advances in Information Retrieval: 43rd European Conference on IR Research (ECIR)},
+    pages={342--358},
+    year={2021},
+    organization={Springer},
+    abstract="Pretrained multilingual text encoders based on neural Transformer architectures, such as multilingual BERT (mBERT) and XLM, have achieved strong performance on a myriad of language understanding tasks. Consequently, they have been adopted as a go-to paradigm for multilingual and cross-lingual representation learning and transfer, rendering cross-lingual word embeddings (CLWEs) effectively obsolete. However, questions remain to which extent this finding generalizes 1) to unsupervised settings and 2) for ad-hoc cross-lingual IR (CLIR) tasks. Therefore, in this work we present a systematic empirical study focused on the suitability of the state-of-the-art multilingual encoders for cross-lingual document and sentence retrieval tasks across a large number of language pairs. In contrast to supervised language understanding, our results indicate that for unsupervised document-level CLIR -- a setup with no relevance judgments for IR-specific fine-tuning -- pretrained encoders fail to significantly outperform models based on CLWEs. For sentence-level CLIR, we demonstrate that state-of-the-art performance can be achieved. However, the peak performance is not met using the general-purpose multilingual text encoders `off-the-shelf', but rather relying on their variants that have been further specialized for sentence understanding tasks.",
+    preview={evaluating-multilingual-textencoders.png},
+    pdf={https://link.springer.com/chapter/10.1007/978-3-030-72113-8_23},
+    code={https://github.com/rlitschk/EncoderCLIR},
+    slides={ecir 2021 presentation.pdf},
+    poster={ecir-2021-poster.pdf}
 }
 
 @inproceedings{vulic-etal-2020-probing,
@@ -529,16 +590,16 @@
 
 
 @inproceedings{litschko2019evaluating,
-  title={Evaluating resource-lean cross-lingual embedding models in unsupervised retrieval},
-  author={Litschko, Robert and Glava{\v{s}}, Goran and Vulic, Ivan and Dietz, Laura},
-  booktitle={Proceedings of the 42nd international ACM SIGIR conference on research and development in information retrieval},
-  pages={1109--1112},
-  year={2019},
-  abstract = "We propose a fully unsupervised framework for ad-hoc cross-lingual information retrieval (CLIR) which requires no bilingual data at all. The framework leverages shared cross-lingual word embedding spaces in which terms, queries, and documents can be represented, irrespective of their actual language. The shared embedding spaces are induced solely on the basis of monolingual corpora in two languages through an iterative process based on adversarial neural networks. Our experiments on the standard CLEF CLIR collections for three language pairs of varying degrees of language similarity (English-Dutch/Italian/Finnish) demonstrate the usefulness of the proposed fully unsupervised approach. Our CLIR models with unsupervised cross-lingual embeddings outperform baselines that utilize cross-lingual embeddings induced relying on word-level and document-level alignments. We then demonstrate that further improvements can be achieved by unsupervised ensemble CLIR models. We believe that the proposed framework is the first step towards development of effective CLIR models for language pairs and domains where parallel data are scarce or non-existent.",
-  pdf={https://dl.acm.org/doi/10.1145/3331184.3331324},
-  poster={poster_sigir19.pdf},
-  code = {https://github.com/rlitschk/UnsupCLIR},
-  abbr={SIGIR 19}
+    title={Evaluating resource-lean cross-lingual embedding models in unsupervised retrieval},
+    author={Litschko, Robert and Glava{\v{s}}, Goran and Vulic, Ivan and Dietz, Laura},
+    booktitle={Proceedings of the 42nd international ACM SIGIR conference on research and development in information retrieval},
+    pages={1109--1112},
+    year={2019},
+    abstract = "We propose a fully unsupervised framework for ad-hoc cross-lingual information retrieval (CLIR) which requires no bilingual data at all. The framework leverages shared cross-lingual word embedding spaces in which terms, queries, and documents can be represented, irrespective of their actual language. The shared embedding spaces are induced solely on the basis of monolingual corpora in two languages through an iterative process based on adversarial neural networks. Our experiments on the standard CLEF CLIR collections for three language pairs of varying degrees of language similarity (English-Dutch/Italian/Finnish) demonstrate the usefulness of the proposed fully unsupervised approach. Our CLIR models with unsupervised cross-lingual embeddings outperform baselines that utilize cross-lingual embeddings induced relying on word-level and document-level alignments. We then demonstrate that further improvements can be achieved by unsupervised ensemble CLIR models. We believe that the proposed framework is the first step towards development of effective CLIR models for language pairs and domains where parallel data are scarce or non-existent.",
+    pdf={https://dl.acm.org/doi/10.1145/3331184.3331324},
+    poster={poster_sigir19.pdf},
+    code = {https://github.com/rlitschk/UnsupCLIR},
+    abbr={SIGIR 19}
 }
 
 
@@ -566,14 +627,14 @@
 
 
 @inproceedings{litschko2018unsupervised,
-  title={Unsupervised cross-lingual information retrieval using monolingual data only},
-  author={Litschko, Robert and Glava{\v{s}}, Goran and Ponzetto, Simone Paolo and Vuli{\'c}, Ivan},
-  booktitle={The 41st International ACM SIGIR Conference on Research \& Development in Information Retrieval},
-  pages={1253--1256},
-  year={2018},
-  pdf={https://dl.acm.org/doi/10.1145/3209978.3210157},
-  abstract="We propose a fully unsupervised framework for ad-hoc cross-lingual information retrieval (CLIR) which requires no bilingual data at all. The framework leverages shared cross-lingual word embedding spaces in which terms, queries, and documents can be represented, irrespective of their actual language. The shared embedding spaces are induced solely on the basis of monolingual corpora in two languages through an iterative process based on adversarial neural networks. Our experiments on the standard CLEF CLIR collections for three language pairs of varying degrees of language similarity (English-Dutch/Italian/Finnish) demonstrate the usefulness of the proposed fully unsupervised approach. Our CLIR models with unsupervised cross-lingual embeddings outperform baselines that utilize cross-lingual embeddings induced relying on word-level and document-level alignments. We then demonstrate that further improvements can be achieved by unsupervised ensemble CLIR models. We believe that the proposed framework is the first step towards development of effective CLIR models for language pairs and domains where parallel data are scarce or non-existent.",
-  code={https://github.com/rlitschk/UnsupCLIR},
-  poster={poster_sigir18.pdf},
-  abbr={SIGIR 18}
+    title={Unsupervised cross-lingual information retrieval using monolingual data only},
+    author={Litschko, Robert and Glava{\v{s}}, Goran and Ponzetto, Simone Paolo and Vuli{\'c}, Ivan},
+    booktitle={The 41st International ACM SIGIR Conference on Research \& Development in Information Retrieval},
+    pages={1253--1256},
+    year={2018},
+    pdf={https://dl.acm.org/doi/10.1145/3209978.3210157},
+    abstract="We propose a fully unsupervised framework for ad-hoc cross-lingual information retrieval (CLIR) which requires no bilingual data at all. The framework leverages shared cross-lingual word embedding spaces in which terms, queries, and documents can be represented, irrespective of their actual language. The shared embedding spaces are induced solely on the basis of monolingual corpora in two languages through an iterative process based on adversarial neural networks. Our experiments on the standard CLEF CLIR collections for three language pairs of varying degrees of language similarity (English-Dutch/Italian/Finnish) demonstrate the usefulness of the proposed fully unsupervised approach. Our CLIR models with unsupervised cross-lingual embeddings outperform baselines that utilize cross-lingual embeddings induced relying on word-level and document-level alignments. We then demonstrate that further improvements can be achieved by unsupervised ensemble CLIR models. We believe that the proposed framework is the first step towards development of effective CLIR models for language pairs and domains where parallel data are scarce or non-existent.",
+    code={https://github.com/rlitschk/UnsupCLIR},
+    poster={poster_sigir18.pdf},
+    abbr={SIGIR 18}
 }
